@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const authRoutes = require("./routes/authRoutes");
-const ProductRoutes = require("./routes/ProductRoutes");
-const usersRoutes = require('./routes/usersRoutes')
+const authRoutes = require("../routes/authRoutes");
+const ProductRoutes = require("../routes/ProductRoutes");
+const usersRoutes = require('../routes/usersRoutes')
 
 global.__basedir = __dirname;
 
