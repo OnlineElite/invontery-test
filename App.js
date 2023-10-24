@@ -20,6 +20,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
 
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.use("/auth", authRoutes);
 app.use("/prod", ProductRoutes);
 app.use("/user",usersRoutes);
